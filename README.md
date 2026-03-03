@@ -4,7 +4,7 @@
 **Full-stack developer building AI-native tools that solve real problems.**  
 I focus on shipping products that work — not demos, not prototypes. Real tools with real impact.
 
-🌐 **Portfolio:** [legendary-semifreddo-3d207d.netlify.app](https://legendary-semifreddo-3d207d.netlify.app)  
+🌐 **Portfolio:** [https://apirithporfolio.netlify.app/](https://apirithporfolio.netlify.app/)  
 💼 **LinkedIn:** [linkedin.com/in/apirith-sothea](https://www.linkedin.com/in/apirith-sothea/)  
 📧 **Email:** apiriths@gmail.com
 
@@ -103,6 +103,6 @@ I'm interested in building AI tools that automate repetitive, high-value work �
 
 If you're interested in collaborating, investing, or just want to talk about what I'm building:
 
-- 🌐 [Portfolio](https://legendary-semifreddo-3d207d.netlify.app)
+- 🌐 [Portfolio](https://apirithporfolio.netlify.app/)
 - 💼 [LinkedIn](https://www.linkedin.com/in/apirith-sothea/)
 - 📧 apiriths@gmail.com
