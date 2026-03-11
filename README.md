@@ -87,6 +87,36 @@ The MVP proves the concept. The full product adds 24/7 automated crawlers, email
 - AI-native product development · Full-stack architecture · Stateless API design · Browser-based tooling
 
 ---
+### 3. Redacto
+
+A full-stack document redaction platform that uses Claude AI to detect and permanently remove PII from PDFs and Word documents. Upload a file, choose what to redact, download a clean version with true black-box redactions, not blurs.
+The Problem it solves: Legal teams, HR departments, and healthcare providers spend hours manually scrubbing sensitive data from documents before sharing them. One missed detail — a social security number buried on page 14, a name in a header — can mean a HIPAA violation or a lawsuit.
+What it does:
+
+-  🔍 Detects 30+ PII categories using Claude AI names, SSNs, medical conditions, financial data, and more
+-  ⬛ Applies permanent black-box redactions (data is destroyed, not hidden behind a blur)
+-  🏷️ Supports labeled redaction mode replace names with [NAME], dates with [DATE]
+-  📁 Runs batch mode drop 100+ documents, walk away, download finished outputs
+-  🎛️ Saves named Redaction Profiles for repeatable workflows (e.g. "HIPAA Profile", "HR Review Profile")
+-  ✏️ Manual Studio editor for post-redaction fine-tuning click to restore or add redactions
+
+**Tech Stack:** 
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite |
+| Backend | FastAPI (Python) |
+| AI Engine | Claude API (Anthropic) |
+| PDF Engine | PyMuPDF |
+| DOCX Engine | python-docx |
+| Batch Queue | Celery + Redis |
+
+**Key Design Decisions:**
+-  ✅ Redactions are permanent PyMuPDF destroys the underlying data at the pixel level, not just visually
+-  ✅ Claude handles the ambiguity context-aware detection catches "Dr. Martinez" as a name even when it appears mid-sentence
+-  ✅ Profile system means compliance teams configure once and apply consistently across every document
+-  ✅ Batch mode is fire-and-forget no babysitting a redaction queue
+
+---
 
 ## 📌 What I'm Building Toward
 
