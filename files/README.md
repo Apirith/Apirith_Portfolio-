@@ -64,14 +64,6 @@ Both of my current products are designed to grow:
 
 I'm focused on building AI tools that automate repetitive, high-value work — the kind currently done manually, at scale, by people who have better things to do.
 
----
-
-## 🎓 Background
-
-- **B.S. Engineering & Management** — Clarkson University
-- **B.A. Physics & Entrepreneurship** — College of Wooster
-- **Current:** Technical Program Manager @ Speridian Technologies
-- **Certifications in progress:** AZ-900 · PSM I · PMP
 
 ---
 
