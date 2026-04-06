@@ -19,7 +19,7 @@ Most resumes get auto-rejected before a human ever sees them. Upload your resume
 **Key decisions:** Fully stateless (no login, no file storage) · Output is honest and human-readable, not keyword-stuffed
 
 ---
-
+Q
 ### [AwardIQ](https://github.com/apiriths/awardiq)
 > Automate award nomination research for your company.
 
