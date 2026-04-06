@@ -1,8 +1,6 @@
 # Hi, I'm Apirith Sothea 👋
 
-**AI Product Engineer · Full-Stack Developer · Builder**
-
-I engineer AI-native tools that solve real problems — not demos, not prototypes. Products people actually use. My stack spans full-stack web, Python backends, and the Anthropic API.
+My stack spans full-stack web, Python backends, and the Anthropic API.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/apirith-sothea/)
 [![Email](https://img.shields.io/badge/Email-apiriths%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:apiriths@gmail.com)
