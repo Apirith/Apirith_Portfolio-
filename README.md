@@ -10,7 +10,7 @@ My stack spans full-stack web, Python backends, and the Anthropic API.
 
 ## 🚀 Featured Projects
 
-### [ATS Resume Optimizer](https://github.com/apiriths/ats-resume-optimizer)
+### [ATS Resume Optimizer](https://github.com/apirith/ats-resume-optimizer)
 > Beat automated hiring filters. Ship your real resume to humans.
 
 Most resumes get auto-rejected before a human ever sees them. Upload your resume + paste a job description — Claude AI rewrites it with matched keywords, XYZ-format bullets, and returns a clean downloadable file in your original format.
@@ -20,7 +20,7 @@ Most resumes get auto-rejected before a human ever sees them. Upload your resume
 
 ---
 Q
-### [AwardIQ](https://github.com/apiriths/awardiq)
+### [AwardIQ](https://github.com/apirith/awardiq)
 > Automate award nomination research for your company.
 
 PR teams miss deadlines constantly. AwardIQ uses Claude AI to search, filter, and track business award opportunities — award name, deadline, cost, eligibility, and source. Runs entirely in your browser, zero backend required.
@@ -32,7 +32,7 @@ PR teams miss deadlines constantly. AwardIQ uses Claude AI to search, filter, an
 
 ---
 
-### [Redacto](https://github.com/apiriths/redacto)
+### [Redacto](https://github.com/apirith/redacto)
 > Protect sensitive data before it leaves your hands.
 
 Automatically detects and redacts PII (personally identifiable information) from documents before sharing. One click, clean output.
