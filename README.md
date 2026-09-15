@@ -1,6 +1,6 @@
 # apirithportfolio
 
-Personal portfolio for Apirith Sothea — mechanical design, AI products, and music. Live at [apirithportfolio.netlify.app](https://apirithportfolio.netlify.app).
+Personal portfolio for Apirith Sothea mechanical design, AI products, and music. Live at [apirithportfolio.netlify.app](https://apirithportfolio.netlify.app).
 
 ## Running it
 
