@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAD | Apirith Sothea</title>
+    <meta name="description" content="Mechanical design portfolio by Apirith Sothea." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a5bb8'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial,sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101114" media="(prefers-color-scheme: dark)" />
+    <noscript>
+      <style>
+        .reveal { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Apirith Sothea</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="cad.html" aria-current="page">CAD</a>
+          <a href="ai.html">AI</a>
+          <a href="music.html">Music</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <section class="section">
+        <div class="container narrow">
+          <p class="eyebrow">CAD</p>
+          <h1>Mechanical concepts and product studies.</h1>
+          <p class="lede">
+            These projects focus on form, tolerancing, product narrative, and the kind
+            of design decisions that turn a simple idea into something you can touch.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted-section">
+        <div class="container project-detail">
+          <div class="project-intro reveal">
+            <p class="meta">SolidWorks · 2026</p>
+            <h2>Fallout-inspired smartwatch</h2>
+            <p>
+              A wrist-mounted concept modeled in SolidWorks with a chunky body,
+              industrial controls, and a retro-inspired interface language.
+            </p>
+            <div class="project-tags">
+              <span>Housing</span>
+              <span>Band</span>
+              <span>Knob</span>
+              <span>Display</span>
+            </div>
+            <div class="cta-row">
+              <a
+                class="button primary"
+                href="assets/cad/fallout-smartwatch/drawing.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View full drawing (PDF, opens in a new tab)</a
+              >
+              <a class="button secondary" href="#drawings">See all sheets</a>
+            </div>
+          </div>
+
+          <div class="project-hero reveal">
+            <model-viewer
+              src="assets/cad/fallout-smartwatch/model.glb"
+              alt="Interactive 3D model of the Fallout-inspired smartwatch"
+              camera-controls
+              touch-action="pan-y"
+              auto-rotate
+              interaction-prompt="none"
+              shadow-intensity="1"
+              exposure="1.05"
+              environment-image="neutral"
+              camera-orbit="35deg 72deg 105%"
+            ></model-viewer>
+            <p class="hero-viewer-hint">Drag to rotate · scroll the page as normal</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="spec-strip reveal">
+            <div>
+              <span class="value">25 × 19 × 15</span>
+              <span class="label">Housing dimensions (mm)</span>
+            </div>
+            <div>
+              <span class="value">5</span>
+              <span class="label">Drawing sheets</span>
+            </div>
+            <div>
+              <span class="value">2:1</span>
+              <span class="label">Drawing scale</span>
+            </div>
+            <div>
+              <span class="value">R1.00</span>
+              <span class="label">Housing fillet radius</span>
+            </div>
+          </div>
+
+          <h2 class="reveal">Drawing sheets</h2>
+          <div id="drawings" class="sheet-grid">
+            <figure class="reveal">
+              <img
+                src="assets/cad/fallout-smartwatch/body.png"
+                alt="Drawing sheet for the smartwatch body: front, top and side views with a 25 by 19 by 15 millimetre housing and R1.00 fillets, plus an isometric view."
+                loading="lazy"
+              />
+              <figcaption>
+                <span>Body</span>
+                <a href="assets/cad/fallout-smartwatch/body.png" target="_blank" rel="noopener noreferrer">Open full size ↗</a>
+              </figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="assets/cad/fallout-smartwatch/wrist-band.png"
+                alt="Drawing sheet for the strap band: 50 millimetre band tapering from 19 to 8 millimetres, a row of 1.10 millimetre adjustment holes, and the clasp detail."
+                loading="lazy"
+              />
+              <figcaption>
+                <span>Strap band</span>
+                <a href="assets/cad/fallout-smartwatch/wrist-band.png" target="_blank" rel="noopener noreferrer">Open full size ↗</a>
+              </figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="assets/cad/fallout-smartwatch/volume-knob.png"
+                alt="Drawing sheet for the volume knob: knurled grip with 0.40 millimetre teeth on a 2.00 by 4.00 millimetre shaft."
+                loading="lazy"
+              />
+              <figcaption>
+                <span>Volume knob</span>
+                <a href="assets/cad/fallout-smartwatch/volume-knob.png" target="_blank" rel="noopener noreferrer">Open full size ↗</a>
+              </figcaption>
+            </figure>
+            <figure class="reveal">
+              <div class="sheet-placeholder">Sheet export pending</div>
+              <figcaption>
+                <span>Combined components</span>
+                <span class="status-chip">Coming soon</span>
+              </figcaption>
+            </figure>
+            <figure class="reveal">
+              <div class="sheet-placeholder">Sheet export pending</div>
+              <figcaption>
+                <span>Power button + screen</span>
+                <span class="status-chip">Coming soon</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Practice · Fundamentals</p>
+          <h2 class="reveal">Mechanical design & product engineering</h2>
+          <ul class="bullet-list reveal">
+            <li>Built SolidWorks models of consumer-electronics-inspired geometries (AirPods housings, iPhone case profiles) to develop foundational skills in 3D CAD, enclosure design, and parametric modeling.</li>
+            <li>Created 2D drawings and basic blueprints, applying introductory GD&T concepts, dimensional constraints, and material annotations.</li>
+            <li>Practiced core DFM/DFA principles such as draft angles, wall-thickness awareness, simple snap-fit geometries, and part simplification for manufacturability.</li>
+            <li>Developed beginner-level tolerance awareness through iterative sketch constraints, fit/clearance adjustments, and multi-body part interactions.</li>
+            <li>Explored basic mechanical analysis concepts — stress concentration, deformation risk, drop-impact considerations — to understand failure modes in enclosure designs.</li>
+            <li>Designed and printed 3D models using Tinkercad and consumer-grade 3D printers, gaining hands-on experience with prototyping workflows and physical part evaluation.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Apirith Sothea</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="cad.html">CAD</a>
+          <a href="ai.html">AI</a>
+          <a href="music.html">Music</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

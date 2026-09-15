@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apirith Sothea | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Apirith Sothea, featuring CAD, AI, and music projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a5bb8'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial,sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101114" media="(prefers-color-scheme: dark)" />
+    <noscript>
+      <style>
+        .reveal { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Apirith Sothea</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="cad.html">CAD</a>
+          <a href="ai.html">AI</a>
+          <a href="music.html">Music</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero dark-section">
+        <div class="container">
+          <p class="eyebrow">Designer · Builder · Tinkerer</p>
+          <h1 class="hero-title">
+            Hands for making, logic for solving, and sound for telling the story.
+          </h1>
+          <p class="lede center">
+            I design and build tools, concepts, and creative systems across CAD,
+            AI products, and music.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="cad.html">View CAD work</a>
+            <a class="button secondary" href="about.html">About me</a>
+          </div>
+
+          <div class="hero-viewer-wrap">
+            <model-viewer
+              src="assets/cad/fallout-smartwatch/model.glb"
+              alt="Interactive 3D model of the Fallout-inspired smartwatch"
+              camera-controls
+              touch-action="pan-y"
+              auto-rotate
+              auto-rotate-delay="1200"
+              rotation-per-second="18deg"
+              shadow-intensity="1"
+              exposure="1.05"
+              environment-image="neutral"
+              camera-orbit="35deg 72deg 105%"
+              interaction-prompt="none"
+            ></model-viewer>
+            <p class="hero-viewer-hint">Drag to rotate — Fallout-inspired smartwatch, modeled in SolidWorks</p>
+          </div>
+
+          <div class="hero-panel">
+            <div class="mini-card accent">
+              <span class="card-label">Current focus</span>
+              <strong>Fallout-inspired smartwatch</strong>
+            </div>
+            <div class="mini-card">
+              <span class="card-label">Selected tools</span>
+              <strong>SolidWorks · Python · LMMS</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2>Three lanes of creative practice.</h2>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="project-card reveal">
+              <div class="thumb cad-thumb">
+                <span>CAD</span>
+              </div>
+              <div class="card-copy">
+                <p class="meta">Mechanical design</p>
+                <h3>Fallout-inspired smartwatch</h3>
+                <p>
+                  A retro-industrial concept with a physical knob, a machined-looking
+                  housing, and a full set of SolidWorks drawing sheets.
+                </p>
+                <a class="card-link" href="cad.html">See the CAD work →</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="thumb ai-thumb">
+                <span>AI</span>
+              </div>
+              <div class="card-copy">
+                <p class="meta">Product thinking</p>
+                <h3>Resume and workflow optimization</h3>
+                <p>
+                  Tools that make messy information clearer, faster to use, and easier
+                  to act on.
+                </p>
+                <a class="card-link" href="ai.html">See the AI projects →</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="thumb music-thumb">
+                <span>Music</span>
+              </div>
+              <div class="card-copy">
+                <p class="meta">Audio and remixing</p>
+                <h3>Authentic, character-driven sound</h3>
+                <p>
+                  Original and remixed tracks shaped with DAW workflows and a love for
+                  texture and motion.
+                </p>
+                <a class="card-link" href="music.html">See the music →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Apirith Sothea</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="cad.html">CAD</a>
+          <a href="ai.html">AI</a>
+          <a href="music.html">Music</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

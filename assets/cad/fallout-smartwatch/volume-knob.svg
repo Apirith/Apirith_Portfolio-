@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Volume knob drawing">
+  <rect width="1200" height="900" fill="#F7F9FB"/>
+  <rect x="110" y="120" width="980" height="660" rx="28" fill="#FFFFFF" stroke="#D9E0E7" stroke-width="2"/>
+  <text x="140" y="170" font-family="Arial, sans-serif" font-size="28" fill="#4A5360">Volume Knob</text>
+  <g transform="translate(230 220)">
+    <circle cx="200" cy="180" r="160" fill="#E6EDF7" stroke="#AFC1D6" stroke-width="4"/>
+    <circle cx="200" cy="180" r="122" fill="#F8FAFC" stroke="#B8C5D9" stroke-width="3"/>
+    <g stroke="#9FB4CF" stroke-width="3">
+      <line x1="200" y1="40" x2="200" y2="320"/>
+      <line x1="40" y1="180" x2="360" y2="180"/>
+      <line x1="90" y1="80" x2="310" y2="280"/>
+      <line x1="90" y1="280" x2="310" y2="80"/>
+    </g>
+    <rect x="160" y="350" width="80" height="120" rx="16" fill="#D7E3F0" stroke="#9BB1CE" stroke-width="3"/>
+  </g>
+  <text x="150" y="770" font-family="Arial, sans-serif" font-size="18" fill="#66717E">Knurl detail and shaft</text>
+</svg>

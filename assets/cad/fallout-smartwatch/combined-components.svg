@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Combined components drawing placeholder">
+  <rect width="1200" height="900" fill="#F7F9FB"/>
+  <rect x="110" y="120" width="980" height="660" rx="28" fill="#FFFFFF" stroke="#D9E0E7" stroke-width="2"/>
+  <text x="140" y="170" font-family="Arial, sans-serif" font-size="28" fill="#4A5360">Combined Components</text>
+  <g transform="translate(170 220)">
+    <rect x="0" y="120" width="260" height="220" rx="24" fill="#E8EEF6" stroke="#B7C2D0" stroke-width="3"/>
+    <rect x="320" y="80" width="260" height="260" rx="24" fill="#EDF3F8" stroke="#B7C2D0" stroke-width="3"/>
+    <rect x="640" y="100" width="220" height="220" rx="18" fill="#E1EAF6" stroke="#AFBED2" stroke-width="3"/>
+    <circle cx="630" cy="420" r="90" fill="#E9F0F9" stroke="#ABBED6" stroke-width="3"/>
+    <rect x="150" y="420" width="320" height="70" rx="12" fill="#DDE9F7" stroke="#9FB8D3" stroke-width="3"/>
+  </g>
+  <text x="150" y="770" font-family="Arial, sans-serif" font-size="18" fill="#66717E">Assembly overview placeholder</text>
+</svg>

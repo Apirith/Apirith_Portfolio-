@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/apiri/AppData/Local/Temp -newermt '-15 minutes' -iname '*.png' -o -newermt '-15 minutes' -iname '*.jpg' 2>/dev/null | head -50)",
+      "Read(//c/Users/apiri/AppData/Local/Temp/**)",
+      "Bash(find /c/Users/apiri/AppData/Local/Temp -newermt '-10 minutes' \\\\\\( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \\\\\\) 2>/dev/null | grep -v sldfuncfeat | head -50 *)",
+      "Read(//c/Users/apiri/AppData/Roaming/**)",
+      "Bash(python -c \"import trimesh\")",
+      "Bash(python -c \"import pygltflib\")",
+      "Bash(where blender *)",
+      "Bash(where freecad *)",
+      "Bash(pip list *)",
+      "Bash(pip install *)",
+      "Bash(python -c \"import trimesh; print\\(trimesh.__version__\\)\")",
+      "Bash(python -c \"import cairosvg, reportlab, PIL; print\\('ok'\\)\")",
+      "Bash(mkdir -p \"/c/Users/apiri/OneDrive/Desktop/Personal Website/Portfolio/scripts\")",
+      "Bash(python scripts/build_watch_model.py)",
+      "Bash(python generate_placeholder_pdf.py)",
+      "Bash(where chromium-cli *)",
+      "Bash(chromium-cli --help)",
+      "Bash(python -c \"import playwright; print\\('playwright available'\\)\")",
+      "Bash(pip show *)",
+      "Bash(python -m playwright install chromium)",
+      "Bash(python \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/screenshot.py\" \"http://localhost:8123/index.html\" \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/home.png\")",
+      "Bash(python \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/screenshot2.py\" \"http://localhost:8123/index.html\" \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/home_scrolled.png\")",
+      "Bash(python \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/screenshot.py\" \"http://localhost:8123/cad.html\" \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/cad.png\")",
+      "Bash(python \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/screenshot2.py\" \"http://localhost:8123/cad.html\" \"/c/Users/apiri/AppData/Local/Temp/claude/c--Users-apiri-OneDrive-Desktop-Personal-Website-Portfolio/9d3f857d-318c-42dd-85ca-b5918f70b727/scratchpad/cad_scrolled.png\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 9448 //F)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\apiri\\OneDrive\\Desktop\\Personal Website\\Portfolio"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Smartwatch strap band drawing">
+  <rect width="1200" height="900" fill="#F7F9FB"/>
+  <rect x="110" y="120" width="980" height="660" rx="28" fill="#FFFFFF" stroke="#D9E0E7" stroke-width="2"/>
+  <text x="140" y="170" font-family="Arial, sans-serif" font-size="28" fill="#4A5360">Strap Band</text>
+  <g transform="translate(180 210)">
+    <path d="M80 180 L460 180 L520 260 L520 360 L460 430 L80 430 L20 360 L20 260 Z" fill="#E7EDF7" stroke="#A9B7C6" stroke-width="3"/>
+    <g fill="#C9D8EC" stroke="#98AEC9" stroke-width="2">
+      <circle cx="110" cy="205" r="12"/>
+      <circle cx="160" cy="205" r="12"/>
+      <circle cx="210" cy="205" r="12"/>
+      <circle cx="260" cy="205" r="12"/>
+      <circle cx="310" cy="205" r="12"/>
+      <circle cx="360" cy="205" r="12"/>
+    </g>
+    <rect x="520" y="240" width="120" height="130" rx="18" fill="#DDE9F7" stroke="#A4B9D2" stroke-width="3"/>
+  </g>
+  <text x="150" y="770" font-family="Arial, sans-serif" font-size="18" fill="#66717E">Band geometry and clasp detail</text>
+</svg>
