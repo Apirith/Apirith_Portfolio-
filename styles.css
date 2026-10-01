@@ -482,6 +482,10 @@ model-viewer {
   background: linear-gradient(160deg, #f1efe9, #d9dcd4);
 }
 
+.games-thumb {
+  background: linear-gradient(160deg, #ffe8d0, #e8b890);
+}
+
 .card-copy {
   display: flex;
   flex-direction: column;
@@ -536,6 +540,134 @@ model-viewer {
 
 .project-card.no-image .card-copy {
   padding: 1.9rem;
+}
+
+/* Game card --------------------------------------------------------- */
+
+.game-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 2.4rem;
+}
+
+.game-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.game-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.game-meta h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.game-description {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.game-features {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.feature-group {
+  margin: 1.2rem 0;
+}
+
+.feature-group h3 {
+  margin: 0 0 0.8rem 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.feature-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.feature-group li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.game-tech {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  margin-top: 1.6rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.game-tech strong {
+  color: var(--text);
+}
+
+.game-screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.game-screenshot {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  display: block;
+  object-fit: cover;
+}
+
+.game-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.game-status {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .game-header {
+    grid-template-columns: 1fr;
+  }
+
+  .game-screenshots {
+    grid-template-columns: 1fr;
+  }
+
+  .game-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-card {
+    padding: 1.6rem;
+  }
 }
 
 /* Project detail --------------------------------------------------------- */
