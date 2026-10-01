@@ -628,6 +628,10 @@ model-viewer {
   gap: 1.2rem;
 }
 
+.game-screenshots.single {
+  grid-template-columns: 1fr;
+}
+
 .game-screenshot {
   width: 100%;
   border-radius: var(--radius-md);
