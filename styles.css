@@ -157,6 +157,10 @@ img {
   color: var(--dark-muted);
 }
 
+.dark-section .lede {
+  color: var(--dark-text);
+}
+
 /* Header / nav ------------------------------------------------------- */
 
 .site-header {
