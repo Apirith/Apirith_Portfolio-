@@ -953,9 +953,36 @@ h3 {
   font-weight: 600;
 }
 
-/* Firmware photos are portrait, so they get a 3:4 frame instead of the drawing's 4:3 */
+/* Firmware photos are square crops, so the frame is the photo itself: no letterboxing */
+.photo-grid figure {
+  padding: 0;
+  overflow: hidden;
+}
+
 .photo-grid img {
-  aspect-ratio: 3 / 4;
+  /* The width/height attributes are for layout hints only; the ratio sets the height */
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  aspect-ratio: 1 / 1;
+  background: var(--surface);
+}
+
+.photo-grid figcaption {
+  margin: 0;
+  padding: 0.9rem 1.1rem 1rem;
+}
+
+/* The video spans the full grid row at its own 16:9 */
+.photo-grid .video-figure {
+  grid-column: 1 / -1;
+}
+
+.photo-grid video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   background: var(--surface);
 }
 

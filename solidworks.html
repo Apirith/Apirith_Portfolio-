@@ -59,16 +59,18 @@
         <div class="container project-detail">
           <div class="project-intro reveal">
             <p class="meta">SolidWorks · 2026</p>
-            <h2>Fallout inspired smartwatch</h2>
+            <h2>AP Project: Retro-terminal smartwatch</h2>
             <p>
-              A wrist mounted concept modeled in SolidWorks with a chunky body,
-              industrial controls, and a retro inspired interface language.
+              A working smartwatch prototype inspired by retro-futurist game hardware,
+              built from an off-the-shelf display board, a custom-wired control knob,
+              and firmware I developed in phases.
             </p>
             <div class="project-tags">
               <span>Housing</span>
               <span>Band</span>
               <span>Knob</span>
               <span>Display</span>
+              <span>Firmware</span>
             </div>
             <div class="cta-row">
               <a class="button secondary" href="#drawings">See all sheets</a>
@@ -163,14 +165,14 @@
           </div>
 
           <h2 class="reveal">Running firmware</h2>
-          <p class="reveal">Photos of the prototype running its firmware on the display.</p>
+          <p class="reveal">Photos and a video of the prototype running its firmware.</p>
           <div class="sheet-grid photo-grid">
             <figure class="reveal">
               <img
                 src="assets/cad/fallout-smartwatch/firmware-boot.jpg"
                 alt="Smartwatch display showing the AP PROJECT boot screen: a green robot icon above the words AP PROJECT and a loading bar."
-                width="900"
-                height="1200"
+                width="1000"
+                height="1000"
                 loading="lazy"
               />
               <figcaption>
@@ -181,8 +183,8 @@
               <img
                 src="assets/cad/fallout-smartwatch/firmware-time.jpg"
                 alt="Smartwatch display on its time screen, with the time, day and date, a step counter and a link status readout."
-                width="900"
-                height="1200"
+                width="1000"
+                height="1000"
                 loading="lazy"
               />
               <figcaption>
@@ -193,12 +195,27 @@
               <img
                 src="assets/cad/fallout-smartwatch/firmware-apps.jpg"
                 alt="Smartwatch display on its Apps menu, with Remote highlighted above Stopwatch, Timer, Alarm, Steps and Settings."
-                width="900"
-                height="1200"
+                width="1000"
+                height="1000"
                 loading="lazy"
               />
               <figcaption>
                 <span>Apps menu</span>
+              </figcaption>
+            </figure>
+            <figure class="reveal video-figure">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster="assets/cad/fallout-smartwatch/firmware-video-poster.jpg"
+                aria-describedby="firmware-video-caption"
+              >
+                <source src="assets/cad/fallout-smartwatch/firmware-video.mp4" type="video/mp4" />
+                <a href="assets/cad/fallout-smartwatch/firmware-video.mp4">Download the video (MP4)</a>
+              </video>
+              <figcaption id="firmware-video-caption">
+                <span>Prototype in use</span>
               </figcaption>
             </figure>
           </div>
@@ -206,6 +223,62 @@
       </section>
 
       <section class="section muted-section">
+        <div class="container narrow">
+          <p class="eyebrow reveal">The build</p>
+          <h2 class="reveal">A working prototype, built in phases</h2>
+          <p class="reveal">
+            The watch is built from an off-the-shelf display board, a custom-wired control knob, and firmware I wrote in three phases. Each phase shipped something that worked before the next one started, the same way I run projects as a TPM.
+          </p>
+
+          <h3 class="reveal">The hardware</h3>
+          <ul class="bullet-list reveal">
+            <li>Core board: Waveshare ESP32-S3 with a 1.69&quot; touch display (240 × 280), a motion sensor, a real-time clock, Wi-Fi and Bluetooth.</li>
+            <li>Power: 300 mAh rechargeable LiPo battery, charged over USB-C.</li>
+            <li>Control knob: EC11 rotary encoder with a push button, hand-soldered to the board&apos;s expansion pads.</li>
+          </ul>
+          <p class="reveal">
+            <strong>Key lesson:</strong> my first CAD model was designed before choosing parts, so it couldn&apos;t fit real electronics. I reversed the process: select the components first, then design the enclosure around them.
+          </p>
+
+          <h3 class="reveal">Phase 1: Core watch</h3>
+          <p class="reveal">A watch that works entirely offline.</p>
+          <ul class="bullet-list reveal">
+            <li>Watch face with time, date, battery level and step count.</li>
+            <li>Apps: stopwatch, timer, alarm, step counter and settings.</li>
+            <li>Settings saved across restarts: brightness, screen timeout and wrist-raise.</li>
+            <li>Battery-saving screen sleep that wakes on knob, button or wrist raise.</li>
+            <li>One control scheme on every screen: turn to scroll, press to select, hold to go home.</li>
+          </ul>
+
+          <h3 class="reveal">Phase 2: Bluetooth remote</h3>
+          <p class="reveal">The knob became a controller for other devices. The watch pairs as a Bluetooth keyboard and media device, with six modes:</p>
+          <ul class="bullet-list reveal">
+            <li>Media: volume and play/pause.</li>
+            <li>Tracks: skip songs and mute.</li>
+            <li>Slides: advance presentations.</li>
+            <li>Scroll: page scrolling.</li>
+            <li>Zoom: zoom control.</li>
+            <li>Call: mic mute for Teams, Zoom and Meet.</li>
+          </ul>
+
+          <h3 class="reveal">Phase 3: Design and experience</h3>
+          <ul class="bullet-list reveal">
+            <li>Retro green-terminal interface with scanlines and a tabbed watch face.</li>
+            <li>BIT, an original robot mascot who waves and winks on startup.</li>
+            <li>CRT-style boot sequence: a power-on flash, then typed system checks showing live hardware status for the clock, motion sensor, Bluetooth and battery.</li>
+            <li>Shutdown animation and sound design: key clicks, knob ticks, and screen-switch &quot;thunks&quot; through the onboard buzzer.</li>
+          </ul>
+
+          <h3 class="reveal">What I learned</h3>
+          <ul class="bullet-list reveal">
+            <li>Design around constraints: real components set the dimensions, not the sketch.</li>
+            <li>Debugging across layers: a missing ground jumper in the wiring, library and board-package version conflicts in the software, and rounded screen corners clipping the interface.</li>
+            <li>Phased delivery: each phase shipped something working before the next one began.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
         <div class="container narrow">
           <p class="eyebrow reveal">Practice · Fundamentals</p>
           <h2 class="reveal">Mechanical design & product engineering</h2>
