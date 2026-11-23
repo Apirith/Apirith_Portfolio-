@@ -973,15 +973,12 @@ h3 {
   padding: 0.9rem 1.1rem 1rem;
 }
 
-/* The video spans the full grid row at its own 16:9 */
-.photo-grid .video-figure {
-  grid-column: 1 / -1;
-}
-
+/* The video is a square crop too, so it sits in the same row as the photos */
 .photo-grid video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
   background: var(--surface);
 }
