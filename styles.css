@@ -877,6 +877,22 @@ h3 {
   background: var(--accent);
 }
 
+/* Long-form story sections (the CAD build write-up): each sub-heading starts
+   a new block, so it gets room above it, and a list sits close to the line
+   that introduces it. */
+.narrow h3 {
+  margin-top: 2.8rem;
+}
+
+.narrow p + .bullet-list,
+.narrow h3 + .bullet-list {
+  margin-top: 1rem;
+}
+
+.narrow .bullet-list + p {
+  margin-top: 1.4rem;
+}
+
 /* Spec strip -------------------------------------------------------------- */
 
 .spec-strip {
