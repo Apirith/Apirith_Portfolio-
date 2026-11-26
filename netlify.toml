@@ -1,3 +1,10 @@
 [build]
   publish = "."
   command = ""
+
+# Show PDFs in the browser instead of downloading them
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "inline"
