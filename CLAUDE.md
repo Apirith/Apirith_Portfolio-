@@ -6,7 +6,7 @@ Read `DESIGN-SYSTEM.md` before changing anything visual, and `SITE-STRUCTURE.md`
 
 ## Stack
 
-Hand-written HTML, CSS and vanilla JS across five pages sharing `styles.css` and `script.js`. No build step, no framework, no bundler, no TypeScript, no CMS, no package.json. The only external dependencies are Google Fonts and `model-viewer`, loaded from a CDN in each page's `<head>`. Don't add libraries. If a change seems to need one, say so and ask before installing anything.
+Hand-written HTML, CSS and vanilla JS across five pages sharing `styles.css` and `script.js`. No build step, no framework, no bundler, no TypeScript, no CMS, no package.json. The only dependencies are Google Fonts (CDN) and `model-viewer` 3.5.0, self-hosted at `assets/vendor/model-viewer-3.5.0.min.js` and loaded in the `<head>` of `index.html` and `solidworks.html`. It was moved off the jsDelivr CDN because a blocked or failed CDN request left the 3D viewer collapsed. Don't add libraries. If a change seems to need one, say so and ask before installing anything.
 
 ## Rules that must hold
 

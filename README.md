@@ -45,6 +45,6 @@ scripts/            One-off Python helpers for generating placeholder assets
 
 Hand-written HTML, CSS and vanilla JavaScript. No framework, no bundler, no CMS, no TypeScript.
 
-The site is five pages of mostly static content with one custom interaction. A build step would add a thing to maintain and break, and would buy nothing. The only external dependencies are Google Fonts and `model-viewer` for the 3D model, both loaded from a CDN in each page's `<head>`.
+The site is five pages of mostly static content with one custom interaction. A build step would add a thing to maintain and break, and would buy nothing. The only dependencies are Google Fonts, loaded from a CDN, and `model-viewer` 3.5.0 for the 3D model, self-hosted at `assets/vendor/model-viewer-3.5.0.min.js` so the viewer doesn't depend on a third-party CDN.
 
 If a change seems to need a package, it probably doesn't.
